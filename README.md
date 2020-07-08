@@ -1,5 +1,5 @@
-# xymontoslack
-Send Xymon alerts to Slack
+# Xymon to Slack
+Simple, quick and easily customizable bash script to send Xymon alerts to Slack
 
 # Details
 This script takes 1 parameter (channel name, $channel) and sends Xymon alerts/notifications to the specified slack channel. The reason I went with a Bot over Incoming Webhooks was because I plan to add more functionality to the xymon alerts, such as querying the bot for more information about the alert or acknowledging the alerts.
