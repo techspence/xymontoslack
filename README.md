@@ -10,7 +10,6 @@ This script takes 1 parameter (channel name, $channel) and sends Xymon alerts/no
 - Bot User OAuth Access Token
 - curl
 
-
 # Slack Configuration
 **Slack App Information & Bot Access Token**
 - The Xymon Bot Access Token can be found by logging into your slack workspace and navigating to:
@@ -42,6 +41,10 @@ HOST=%.* COLOR=red SERVICE=conn,cpu,disk,http,mem,memory,pagefile,procs,smtp,svc
 HOST=%.* COLOR=red SERVICE=conn,cpu,disk,http,mem,memory,pagefile,procs,smtp,svcs,ssh,snapshots
         SCRIPT /home/user/xymontoslack.sh alerts
 ```
+
+# Example Slack Alert
+![image](https://user-images.githubusercontent.com/7014376/86933883-0d495e80-c109-11ea-9921-c6208266d986.png)
+
 
 # Disabling Xymon Alerts
 **Why would you want to disable alerts?**
