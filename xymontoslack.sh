@@ -14,7 +14,6 @@ msg="\`\`\`$BBALPHAMSG\`\`\`"
 svcname=$BBSVCNAME
 username="Xymon Alert"
 channel="#${RCPT}"
-recovered=$RECOVERED
 
 
 if [[ $xymonenv == "dev"* ]]; then
@@ -46,7 +45,7 @@ postdata()
   cat <<EOF
 {
   "channel": "$channel",
-  "text": "$alertemoji *$hostname: $svcname is $level.* $alertemoji $alertuser $msg",
+  "text": "$alertemoji *$hostname: $svcname is $level.* $alertemoji $msg",
   "username": "$username",
   "icon_emoji": "$iconemoji"
 }
